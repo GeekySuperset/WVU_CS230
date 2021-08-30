@@ -1,0 +1,67 @@
+
+<!--
+<nav class ="navbar navbar-expand navbar-light bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">imgur</a>
+        <div class="input-group bg-secondary rounded">
+            <input type="text" class="form-control no-border bg-secondary " placeholder="Images,#tags, @users oh my!" aria-label="Images,#tags, @users oh my!" aria-describedby="basic-addon1 text-whtie">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </div>
+        <button type="button" class="btn btn-sm"><a class="nav-link text-white" href="#">Go Ad-Free</a></button>
+        <button type="button" class="btn btn-sm"><a class="nav-link text-white" href="#">Sign in</a></button>
+        <button type="button" class="btn btn-sm"><a class="nav-link text-white" href="#">Sign up</a></button>  
+    </div>
+</nav>
+-->
+
+<!-- Entire Top Bar -->
+<nav class = "navbar bg-dark align-content container-fluid">
+    <!-- Site Link and posting -->
+    <nav class = "navbar">
+        <!--Navbar brand for imgur-->
+        <a class="navbar-brand text-white" href="#">imgur</a>
+        <!--New post button-->
+        <button type="button" class="btn btn-sm d-inline-flex bg-success">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-plus-square-fill align-self-center" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+            </svg>
+            <a class="nav-link text-white" href="#">New post</a>
+        </button>
+    </nav>
+    <!--Navbar for search bar-->
+    <nav class = "navbar">
+        <div class="input-group mb-3 flex-no-wrap">
+            <input type="text" class="form-control" placeholder="Images" aria-label="Images" aria-describedby="button-addon2">
+            <!--Search Button-->
+            <button class="btn" type="button" id="button-addon2"> 
+                <span class="border"></span>
+                <span class="border-left-0"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                <a class="nav-link text-white" href="#"></a>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Navbar containing -->
+    <nav class = "navbar">
+        <!--Comment Leaderboard icon-->
+        <button type="button" class="btn btn-sm d-inline-flex">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+              </svg>
+            <a class="nav-link text-white" href="#"></a>
+        </button>
+        <!--Go Ad-Free button-->
+        <button type="button" class="btn btn-sm"><a class="nav-link text-white" href="#">Go Ad-Free</a></button>
+        <!--Sign in button-->
+        <button type="button" class="btn btn-sm"><a class="nav-link text-white" href="#">Sign in</a></button>
+        <!--Sign up button-->
+        <button type="button" class="btn btn-sm bg-success"><a class="nav-link text-white" href="#">Sign up</a></button> 
+    </nav>
+</nav>
