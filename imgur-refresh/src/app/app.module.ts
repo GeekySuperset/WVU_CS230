@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TopHeaderComponent } from './header/top-header.component';
-import { BottomHeaderComponent } from './footer/bottom-header.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { TagsComponent } from './tags/tags.component';
+import { ContentBarComponent } from './content-bar/content-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopHeaderComponent,
-    BottomHeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    TagsComponent,
+    ContentBarComponent
   ],
   imports: [
     BrowserModule,
