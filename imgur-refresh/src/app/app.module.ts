@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TagsComponent } from './tags/tags.component';
 import { ContentBarComponent } from './content-bar/content-bar.component';
+import { LayoutComponent } from './layout/layout.component';
+import { SiteMessageComponent } from './site-message/site-message.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ContentBarComponent } from './content-bar/content-bar.component';
     HeaderComponent,
     FooterComponent,
     TagsComponent,
-    ContentBarComponent
+    ContentBarComponent,
+    LayoutComponent,
+    SiteMessageComponent
   ],
   imports: [
     BrowserModule,

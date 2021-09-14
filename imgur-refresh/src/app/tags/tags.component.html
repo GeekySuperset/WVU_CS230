@@ -1,4 +1,4 @@
-<div class = "bg-dark py-3">
+<div class = "py-3" style="background-color: rgba(0,0,0,0);">
     <div class="d-flex justify-content-between align-items-center mx-5">
         <div class="d-flex align-items-center text-white">
             <span>EXPLORE TAGS</span>
@@ -10,15 +10,15 @@
             <a></a>
             <img src="/assets/pokemon.jpg" class="card-img-top ">
             <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">Pokemon</div>
-              <div class="card-text" style="color:rgba(254,254,254,0.8);">Featured . 52,028 Posts</div>
+              <div class="card-text" style="font-weight: bold;">{{featured_tag_topic}}</div>
+              <div class="card-text" style="color:rgba(254,254,254,0.8);">Featured . {{featured_tag_posts}} Posts</div>
             </div>
         </div>
         <div class="card text-center" style="width: 7rem; background-color: #5A3C78;">
             <a></a>
             <img src="/assets/Brendan_Fraser.png" class="card-img-top" style="height: 4rem;" style="height: 4rem;">
             <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">Brendan Fraser</div>
+              <div class="card-text" style="font-weight: bold;">{{tags[0]}}</div>
               <div class="card-text" style="color:rgba(254,254,254,0.8);">425 Posts</div>
             </div>
         </div>
@@ -26,7 +26,7 @@
             <a></a>
             <img src="/assets/tradition.jpg" class="card-img-top" style="height: 4rem;">
             <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">Traditon</div>
+              <div class="card-text" style="font-weight: bold;">{{tags[1]}}</div>
               <div class="card-text text-bottom" style="font-size:small; color:rgba(254,254,254,0.8);">910 Posts</div>
             </div>
         </div>

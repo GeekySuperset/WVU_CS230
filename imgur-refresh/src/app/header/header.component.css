@@ -1,3 +1,15 @@
 ::placeholder{
     color:lightgray;
 }
+.search-bar {
+    border:none;
+    background-color: gray;
+}
+.ad-free{
+    border-radius: 10px;
+    background-color: #6432F9;
+}
+.sign-up{
+    border-radius: 10px; 
+    background-color: #1BB76E;
+}
