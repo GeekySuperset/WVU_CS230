@@ -7,8 +7,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TagsComponent } from './tags/tags.component';
 import { ContentBarComponent } from './content-bar/content-bar.component';
-import { LayoutComponent } from './layout/layout.component';
 import { SiteMessageComponent } from './site-message/site-message.component';
+import { LayoutEmeraldComponent } from './layout-emerald/layout-emerald.component';
+import { LayoutMainComponent } from './layout-main/layout-main.component';
+import { LayoutSignInComponent } from './layout-sign-in/layout-sign-in.component';
+import { LayoutRegisterComponent } from './layout-register/layout-register.component';
+import { LayoutPrivacyComponent } from './layout-privacy/layout-privacy.component';
+import { LayoutRulesComponent } from './layout-rules/layout-rules.component';
+import { HeaderSecondaryComponent } from './header-secondary/header-secondary.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +23,14 @@ import { SiteMessageComponent } from './site-message/site-message.component';
     FooterComponent,
     TagsComponent,
     ContentBarComponent,
-    LayoutComponent,
-    SiteMessageComponent
+    SiteMessageComponent,
+    LayoutEmeraldComponent,
+    LayoutMainComponent,
+    LayoutSignInComponent,
+    LayoutRegisterComponent,
+    LayoutPrivacyComponent,
+    LayoutRulesComponent,
+    HeaderSecondaryComponent
   ],
   imports: [
     BrowserModule,
