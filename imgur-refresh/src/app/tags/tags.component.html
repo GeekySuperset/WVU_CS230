@@ -5,8 +5,8 @@
         </div>
         <a type="button" class="btn text-white">MORE TAGS +</a>
     </div>
-    <div class=" d-flex justify-content-between p-1 flex-wrap text-white mx-5">
-        <div class="card text-center" style="width: 15rem; background-color:rgb(255,100,130);">
+    <div class="d-inline-flex flex-nowrap justify-content-between p-1 flex-wrap text-white mx-5">
+        <div class="card text-center" style="background-color:rgb(255,100,130);">
             <a></a>
             <img src="/assets/pokemon.jpg" class="card-img-top ">
             <div class="card-body p-1">
@@ -14,73 +14,9 @@
               <div class="card-text" style="color:rgba(254,254,254,0.8);">Featured . {{featured_tag_posts}} Posts</div>
             </div>
         </div>
-        <div class="card text-center" style="width: 7rem; background-color: #5A3C78;">
-            <a></a>
-            <img src="/assets/Brendan_Fraser.png" class="card-img-top" style="height: 4rem;" style="height: 4rem;">
-            <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">{{tags[0]}}</div>
-              <div class="card-text" style="color:rgba(254,254,254,0.8);">425 Posts</div>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 7rem; background-color: #328C66;">
-            <a></a>
-            <img src="/assets/tradition.jpg" class="card-img-top" style="height: 4rem;">
-            <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">{{tags[1]}}</div>
-              <div class="card-text text-bottom" style="font-size:small; color:rgba(254,254,254,0.8);">910 Posts</div>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 7rem; background-color: #5B62A6;">
-            <a></a>
-            <img src="/assets/spiderman.png" class="card-img-top" style="height: 4rem;">
-            <div class="card-body p-2" style="height: rem;">
-              <div class="card-text" style="font-weight: bold;">Spiderman</div>
-              <div class="card-text" style="color:rgba(254,254,254,0.8);">8,710 Posts</div>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 7rem; height: 10rem; background-color: #691c85;">
-            <a></a>
-            <img src="/assets/funny.jpg" class="card-img-top" style="height: 4rem;">
-            <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">Funny</div>
-              <div class="card-text " style="color:rgba(254,254,254,0.8);">2,696,781 Posts</div>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 7rem; background-color: #223dc8;">
-            <a></a>
-            <img src="/assets/unmuted.png" class="card-img-top" style="height: 4rem;">
-            <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">Unmuted</div>
-              <div class="card-text" style="color:rgba(254,254,254,0.8);">13,288 Posts</div>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 7rem; background-color: #AB80B8;">
-            <img src="/assets/Oc.jpg" class="card-img-top" style="height: 4rem;">
-            <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">Oc</div>
-              <div class="card-text" style="color:rgba(254,254,254,0.8);">36,373 Posts</div>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 7rem; background-color: #51535A;">
-            <img src="/assets/coronavirus.png" class="card-img-top" style="height: 4rem;">
-            <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">Coronavirus</div>
-              <div class="card-text" style="color:rgba(254,254,254,0.8);">35,172 Posts</div>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 7rem; background-color: #E47D57;">
-            <img src="/assets/science_tech.jpg" class="card-img-top" style="height: 4rem;">
-            <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">Science And Tech</div>
-              <div class="card-text" style="color:rgba(254,254,254,0.8);">44,684 Posts</div>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 7rem; background-color: #60AEBB;">
-            <img src="/assets/aww.jpg" class="card-img-top" style="height: 4rem;">
-            <div class="card-body p-1">
-              <div class="card-text" style="font-weight: bold;">Aww</div>
-              <div class="card-text" style="color:rgba(254,254,254,0.8);">760,327 Posts</div>
-            </div>
+
+        <div *ngFor="let tag of tags;">
+          <tag-card topic={{tag.topic}} posts={{tag.posts}} imagePath={{tag.imagePath}}></tag-card>
         </div>
     </div>
 </div>

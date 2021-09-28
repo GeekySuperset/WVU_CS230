@@ -1,0 +1,5 @@
+<div class ="d-flex">
+    <div *ngFor="let post of posts;">
+        <post-card title={{post.title}} upvotes={{post.upvotes}} comments={{post.comments}} post_views ={{post.post_views}} imagePath={{post.imagePath}}></post-card>
+    </div>
+</div>

@@ -15,6 +15,9 @@ import { LayoutRegisterComponent } from './layout-register/layout-register.compo
 import { LayoutPrivacyComponent } from './layout-privacy/layout-privacy.component';
 import { LayoutRulesComponent } from './layout-rules/layout-rules.component';
 import { HeaderSecondaryComponent } from './header-secondary/header-secondary.component';
+import { TagCardComponent } from './tags/tag-card.component';
+import { PostsComponent } from './posts/posts.component';
+import { PostCardComponent } from './posts/post-card.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { HeaderSecondaryComponent } from './header-secondary/header-secondary.co
     LayoutRegisterComponent,
     LayoutPrivacyComponent,
     LayoutRulesComponent,
-    HeaderSecondaryComponent
+    HeaderSecondaryComponent,
+    TagCardComponent,
+    PostsComponent,
+    PostCardComponent
   ],
   imports: [
     BrowserModule,
