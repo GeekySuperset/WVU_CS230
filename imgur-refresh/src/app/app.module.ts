@@ -18,6 +18,9 @@ import { HeaderSecondaryComponent } from './header-secondary/header-secondary.co
 import { TagCardComponent } from './tags/tag-card.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostCardComponent } from './posts/post-card.component';
+import {HttpClientModule} from '@angular/common/http';
+import { DbTestComponent } from './db-test/db-test.component';
+
 
 @NgModule({
   declarations: [
@@ -36,11 +39,13 @@ import { PostCardComponent } from './posts/post-card.component';
     HeaderSecondaryComponent,
     TagCardComponent,
     PostsComponent,
-    PostCardComponent
+    PostCardComponent,
+    DbTestComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
