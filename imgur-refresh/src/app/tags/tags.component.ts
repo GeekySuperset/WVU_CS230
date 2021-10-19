@@ -1,6 +1,8 @@
+import { findReadVarNames } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
-import { mock_tags } from './mock-tags';
 import { Tag } from "./tag.model"
+import { TagsService } from './tags.service';
+
 @Component({
   selector: 'app-tags',
   templateUrl: './tags.component.html',
@@ -12,13 +14,16 @@ export class TagsComponent implements OnInit {
   //tags:Array<string> = ['Brendan Fraser','Tradition','Spiderman'];
   tags:Tag[] = [];
 
-  constructor() { 
-    for (var tag of mock_tags){
-      this.tags.push(new Tag(tag));
-    }
+  constructor(private infoService:TagsService ) { 
   }
-
+  
   ngOnInit(): void {
+    this.showTags();
   }
-
+  
+  showTags(){
+    this.infoService.getTags().subscribe((data: Tag[]) =>{
+      this.tags = data;
+    })
+  }
 }

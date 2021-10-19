@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { mock_posts } from './mock-posts';
 import { Post } from "./post.model"
+import { PostsService } from './post.serivce';
 
 @Component({
   selector: 'app-posts',
@@ -10,13 +10,16 @@ import { Post } from "./post.model"
 export class PostsComponent implements OnInit {
   posts:Post[] = [];
 
-  constructor() { 
-    for (var post of mock_posts){
-      this.posts.push(new Post(post));
-    }
+  constructor(private infoService:PostsService) { 
   }
 
   ngOnInit(): void {
+    this.showPosts();
   }
 
+  showPosts(){
+    this.infoService.getPosts().subscribe((data: Post[]) =>{
+      this.posts = data;
+    })
+  }
 }
