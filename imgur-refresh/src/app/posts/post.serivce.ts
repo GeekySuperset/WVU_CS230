@@ -9,4 +9,8 @@ export class PostsService{
     getPosts(){
         return this.http.get<Post[]>('https://imgur-refresh-default-rtdb.firebaseio.com/posts.json');
     }
+    pushPost(myPost:Post,length:number){
+        var slength = length.toString();
+        return this.http.put('https://imgur-refresh-default-rtdb.firebaseio.com/posts/'+slength+'.json', myPost);
+    }
 }

@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, Injectable, OnInit } from '@angular/core';
 import { DbTest } from './db-test.model';
+import { UserInfoService } from './db-test.service';
 @Injectable()
 @Component({
   selector: 'app-db-test',
@@ -9,18 +9,14 @@ import { DbTest } from './db-test.model';
 export class DbTestComponent implements OnInit {
   myInfo: DbTest|undefined;
 
-  constructor(private http: HttpClient) { }
+  constructor(private infoService:UserInfoService ){ }
 
   ngOnInit(): void {
-    this.getUserInfo();
     this.showUserInfo();
   }
 
-  getUserInfo(){
-    return this.http.get<DbTest>('https://imgur-refresh-default-rtdb.firebaseio.com/my-info.json');
-  }
   showUserInfo(){
-    this.getUserInfo().subscribe((data: DbTest) =>{
+    this.infoService.getUserInfo().subscribe((data: DbTest) =>{
       console.log(data);
       this.myInfo = data;
     })

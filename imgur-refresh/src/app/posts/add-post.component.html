@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form #postForm="ngForm" (ngSubmit)="onAddPost(postForm.value)">
+                <div class="row">
+                    <div class="d-inline-flex">
+                        <div class="input-group">
+                            <span class="input-group-text">Create Post</span>
+                            <input type="text" id="title" class="form-control" placeholder="Title" ngModel name="title">
+                            <input type="text" id="image" class="form-control" placeholder="Image" ngModel name="imagePath">
+                        </div>
+                        <button class="btn btn-primary" type="submit">
+                            Make a Post
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

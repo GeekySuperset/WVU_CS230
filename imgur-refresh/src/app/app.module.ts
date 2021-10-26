@@ -20,6 +20,8 @@ import { PostsComponent } from './posts/posts.component';
 import { PostCardComponent } from './posts/post-card.component';
 import {HttpClientModule} from '@angular/common/http';
 import { DbTestComponent } from './db-test/db-test.component';
+import { AddPostComponent } from './posts/add-post.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -40,12 +42,14 @@ import { DbTestComponent } from './db-test/db-test.component';
     TagCardComponent,
     PostsComponent,
     PostCardComponent,
-    DbTestComponent
+    DbTestComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

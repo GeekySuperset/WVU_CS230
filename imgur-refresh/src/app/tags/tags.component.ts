@@ -1,4 +1,3 @@
-import { findReadVarNames } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { Tag } from "./tag.model"
 import { TagsService } from './tags.service';
