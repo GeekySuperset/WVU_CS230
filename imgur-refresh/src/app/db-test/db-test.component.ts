@@ -1,6 +1,7 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { DbTest } from './db-test.model';
 import { UserInfoService } from './db-test.service';
+import { DatabaseService } from './db.service';
 @Injectable()
 @Component({
   selector: 'app-db-test',
@@ -9,7 +10,7 @@ import { UserInfoService } from './db-test.service';
 export class DbTestComponent implements OnInit {
   myInfo: DbTest|undefined;
 
-  constructor(private infoService:UserInfoService ){ }
+  constructor(private infoService:UserInfoService){ }
 
   ngOnInit(): void {
     this.showUserInfo();

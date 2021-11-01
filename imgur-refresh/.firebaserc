@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "imgur-refresh": {
+      "hosting": {
+        "imgur-refresh": [
+          "imgur-refresh"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "imgur-refresh"
+  }
+}

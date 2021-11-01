@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from './db.service';
 import { Post } from "./post.model"
 import { PostsService } from './post.serivce';
 
@@ -10,7 +11,8 @@ import { PostsService } from './post.serivce';
 export class PostsComponent implements OnInit {
   posts:Post[] = [];
 
-  constructor(private infoService:PostsService) { 
+  constructor(private infoService:PostsService, private dbService:DatabaseService) { 
+    this.dbService.getPosts();
   }
 
   ngOnInit(): void {
