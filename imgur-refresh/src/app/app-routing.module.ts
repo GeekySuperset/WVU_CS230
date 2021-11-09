@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
 
 import { LayoutEmeraldComponent } from './layout-emerald/layout-emerald.component';
 import { LayoutMainComponent } from './layout-main/layout-main.component';
@@ -9,12 +10,13 @@ import { LayoutRulesComponent } from './layout-rules/layout-rules.component';
 import { LayoutSignInComponent } from './layout-sign-in/layout-sign-in.component';
 
 const routes: Routes = [
-  {path: '', component: LayoutMainComponent},
   {path: 'emerald', component: LayoutEmeraldComponent},
-  {path: 'sigin', component: LayoutSignInComponent},
+  {path: 'signin', component: LayoutSignInComponent},
   {path: 'register', component: LayoutRegisterComponent},
   {path: 'rules', component: LayoutRulesComponent},
-  {path: 'privacy', component: LayoutPrivacyComponent}
+  {path: 'privacy', component: LayoutPrivacyComponent},
+  {path: 'auth', component: AuthComponent },
+  {path: '', component: LayoutMainComponent}
 ];
 
 @NgModule({
